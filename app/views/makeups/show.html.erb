@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @makeup.name %>
+</p>
+
+<p>
+  <strong>Colour:</strong>
+  <%= @makeup.colour %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @makeup.rating %>
+</p>
+
+<%= link_to 'Edit', edit_makeup_path(@makeup) %> |
+<%= link_to 'Back', makeups_path %>

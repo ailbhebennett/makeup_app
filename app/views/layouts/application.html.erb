@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MakeupReviewApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+   <head>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+  
+  </head>
+
+  <body>
+  <%= render partial: "layouts/header" %>
+
+  <section class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 pt-4">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <%= render partial: "layouts/footer" %>
+  </body>
+</html>
